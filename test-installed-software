@@ -1,0 +1,8 @@
+#!/bin/bash
+for prog in `cat ~/.programs` 
+do	
+        if ! which $prog > /dev/null 2>&1 
+	then
+		echo $prog
+	fi
+done
