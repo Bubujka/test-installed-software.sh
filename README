@@ -1,0 +1,26 @@
+Зачем
+=====
+
+Данный скрипт помогает мигрировать с одного дистрибутива на другой 
+- он подсказываем что из программ ещё не установлено из заранее заданного списка.
+
+Как
+===
+
+Для начала надо составить список программ, которые надо проверять:
+
+$ cat ~/.programms
+vim
+chromium-browser
+i3wm
+soffice
+unzip
+unrar
+pidgin
+
+После этого качаем и запускаем скрипт:
+$ wget https://raw.github.com/Bubujka/test-installed-software.sh/master/test-installed-software
+$ bash test-installed-software
+
+Если что-то из списка программ не найдено - скрипт об этом напишет.
+
